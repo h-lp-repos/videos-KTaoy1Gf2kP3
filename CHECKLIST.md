@@ -1,0 +1,38 @@
+# Repository Completion Checklist
+
+- [ ] Root README.md with repo overview and structure
+- [ ] Root .gitignore
+
+- [ ] lesson-l3-multi-agent-systems/
+  - [ ] video-1-introduction-motivation/
+    - [ ] README.md
+    - [ ] script.md
+    - [ ] storyboard.md
+    - [ ] assets-list.md
+    - [ ] slide-deck-outline.md
+    - [ ] timestamps.md
+    - [ ] references.md
+    - [ ] production-notes.md
+  - [ ] video-2-technical-deep-dive/
+    - [ ] README.md
+    - [ ] script.md
+    - [ ] storyboard.md
+    - [ ] assets-list.md
+    - [ ] slide-deck-outline.md
+    - [ ] timestamps.md
+    - [ ] references.md
+    - [ ] production-notes.md
+    - [ ] .gitignore
+    - [ ] code-examples/collaboration_patterns.py
+  - [ ] video-3-hands-on-integrative-demo/
+    - [ ] README.md
+    - [ ] script.md
+    - [ ] storyboard.md
+    - [ ] assets-list.md
+    - [ ] slide-deck-outline.md
+    - [ ] timestamps.md
+    - [ ] references.md
+    - [ ] production-notes.md
+    - [ ] .gitignore
+    - [ ] requirements.txt
+    - [ ] code-examples/query_router.py
