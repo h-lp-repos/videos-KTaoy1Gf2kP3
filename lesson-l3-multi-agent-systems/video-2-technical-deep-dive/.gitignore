@@ -1,3 +1,21 @@
-# Video 2 Python .gitignore
+# Python .gitignore for Video 2
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 *.pyc
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and environment files
+*.log
+.env
+
+# macOS
+.DS_Store
