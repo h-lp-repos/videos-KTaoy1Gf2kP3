@@ -1,41 +1,26 @@
 # Lesson L3: Multi-Agent Systems Video Materials
 
-This repository contains the production materials for Lesson L3: Multi-Agent Systems, Module 3: Agents, Orchestration and Tracing. It includes three instructional videos:
+This repository collects the production-ready artifacts for the three high-priority videos in Lesson L3: Multi-Agent Systems (Module 3: Agents, Orchestration and Tracing). Each folder under `videos/` contains everything a producer needs to explain, demo, and verify the concepts without requesting additional materials.
 
-- Video 1: Introduction & Motivation — Why Multi-Agent Systems?
-- Video 2: Technical Deep-Dive — Architectures & Collaboration Patterns
-- Video 3: Hands-On Integrative Demo — Building a Multi-Agent Query Router with LangChain & OpenAI Function Calling
+## Videos
+- [video-01-introduction-motivation](videos/video-01-introduction-motivation) — "Why Multi-Agent Systems?" (Section 3.1, 6 min)
+- [video-02-technical-deep-dive](videos/video-02-technical-deep-dive) — Architectures & Collaboration Patterns (Section 3.2, 13 min)
+- [video-03-hands-on-integrative-demo](videos/video-03-hands-on-integrative-demo) — Multi-Agent Query Router with LangChain & OpenAI Function Calling (Section 3.3, 18 min)
 
-## Repository Structure
+## Local validation
+Execute the standalone verification helper before pushing updates:
 
 ```
-lesson-l3-multi-agent-systems/
-├── video-1-introduction-motivation/
-├── video-2-technical-deep-dive/
-└── video-3-hands-on-integrative-demo/
+bash .github/scripts/validate-videos.sh
 ```
 
-Each video folder contains:
-- `README.md` – Overview and detailed instructions for the video.
-- `script.md` – High-level script with timestamps.
-- `storyboard.md` – Visual storyboard outlining shots and diagrams.
-- `assets-list.md` – List of required assets (slides, diagrams, code screenshots).
-- `slide-deck-outline.md` – Slide deck outline structure.
-- `timestamps.md` – Timestamps for each section.
-- `references.md` – References and related videos.
-- `production-notes.md` – Production guidelines and notes.
+It checks each `video-XX-*` directory for the README, video.json, guion.md, code/, run.sh, verify.sh, and recording.md files required by the CI.
 
-Video 2 and Video 3 also include:
-- `code-examples/` – Example code snippets or starter code.
-- `.gitignore` – Ignored files specific to the video’s technology.
+## Continuous integration
+`.github/workflows/validate-videos.yml` runs on every change touching the `videos/` tree and enforces the same guardrails as the local script so missing artifacts fail the pipeline early.
 
-Video 3 includes:
-- `requirements.txt` – Python dependencies for the hands-on demo.
+## Contribution guidelines
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the naming conventions, branch and PR checklist, and how to add new videos or update existing ones.
 
-## Production Order
-
-1. Video 1: Introduction & Motivation
-2. Video 2: Technical Deep-Dive
-3. Video 3: Hands-On Integrative Demo
-
-See each video folder for details.
+## Artifact policies
+Avoid packing large binaries; use scripts under `videos/video-XX-*/data/` to download sizable datasets, and describe their source and checksum in the respective README.

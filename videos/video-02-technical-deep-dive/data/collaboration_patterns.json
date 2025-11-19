@@ -1,0 +1,19 @@
+{
+  "patterns": [
+    {
+      "name": "Role assignment",
+      "description": "Map the incoming intent to the agent that specializes in that domain.",
+      "example": "If query mentions payroll, select the HR agent."
+    },
+    {
+      "name": "Task delegation",
+      "description": "Route the request payload, context, and policy hints to the chosen agent.",
+      "example": "Pass the conversation history plus policy tokens to the Technical agent."
+    },
+    {
+      "name": "Conversational handoffs",
+      "description": "Store agent responses and user confirmations to maintain thread continuity.",
+      "example": "Keep the last two turns from each agent in the conversation state."
+    }
+  ]
+}

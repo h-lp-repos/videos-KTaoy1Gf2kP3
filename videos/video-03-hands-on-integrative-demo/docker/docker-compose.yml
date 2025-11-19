@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  query-router-demo:
+    build:
+      context: ../../..
+      dockerfile: videos/video-03-hands-on-integrative-demo/docker/Dockerfile
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+    working_dir: /workspace
+    command: ["bash", "run.sh"]

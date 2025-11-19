@@ -1,39 +1,16 @@
-# Repository Completion Checklist
-
-- [x] Root README.md with repo overview and structure
-- [x] Root .gitignore
-
-- [x] lesson-l3-multi-agent-systems/
-  - [x] video-1-introduction-motivation/
-    - [x] README.md
-    - [x] script.md
-    - [x] storyboard.md
-    - [x] assets-list.md
-    - [x] slide-deck-outline.md
-    - [x] timestamps.md
-    - [x] references.md
-    - [x] production-notes.md
-  - [x] video-2-technical-deep-dive/
-    - [x] README.md
-    - [x] script.md
-    - [x] storyboard.md
-    - [x] assets-list.md
-    - [x] slide-deck-outline.md
-    - [x] timestamps.md
-    - [x] references.md
-    - [x] production-notes.md
-    - [x] .gitignore
-    - [x] code-examples/collaboration_patterns.py
-  - [x] video-3-hands-on-integrative-demo/
-    - [x] README.md
-    - [x] script.md
-    - [x] storyboard.md
-    - [x] assets-list.md
-    - [x] slide-deck-outline.md
-    - [x] timestamps.md
-    - [x] references.md
-    - [x] production-notes.md
-    - [x] .gitignore
-    - [x] requirements.txt
-    - [x] code-examples/query_router.py
-
+# Ready-to-Record Checklist
+- [ ] `videos/video-XX-slug` exists for the video being produced.
+- [ ] `videos/video-XX-slug/README.md` follows the prescribed template (title, location, objectives, prereqs, setup, steps, checkpoints, references).
+- [ ] `videos/video-XX-slug/video.json` contains the required metadata and `last_verified` reflects the date of the latest change.
+- [ ] `videos/video-XX-slug/guion.md` includes the full script, timestamps, commands, and cues for transitions or close-ups.
+- [ ] `videos/video-XX-slug/code/` houses the demo code plus a README with execution instructions.
+- [ ] `videos/video-XX-slug/run.sh` installs dependencies and launches the demo reliably.
+- [ ] `videos/video-XX-slug/verify.sh` passes locally, exits with code 0, and prints the checkpoints verbatim from the video README.
+- [ ] `videos/video-XX-slug/env.example` enumerates required variables without exposing secrets.
+- [ ] `videos/video-XX-slug/docker/` (if applicable) builds and runs via the provided Dockerfile or compose recipe.
+- [ ] `videos/video-XX-slug/data/` supplies data or download scripts plus checksums when large files are involved.
+- [ ] `videos/video-XX-slug/assets/` contains screenshots, diagrams, or references needed by the presenter.
+- [ ] `videos/video-XX-slug/recording.md` documents production settings (resolution, frame rate, font size, windows to show, visual cues).
+- [ ] `videos/video-XX-slug/run.sh` and `verify.sh` are executable and referenced in the video README.
+- [ ] `.github/scripts/validate-videos.sh` and `.github/workflows/validate-videos.yml` cover the same guardrails described in this repo.
+- [ ] Commit message uses `video: ...` when targeting a specific video (e.g. `video: update video-03`).

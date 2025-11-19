@@ -1,0 +1,3 @@
+What are the remaining PTO options for the new hires in the HR portal?
+Our staging deploy failed with a 502 error; can the Tech Agent diagnose the logs?
+Can you summarize the payroll changes for contract contractors and the approved leave policy?
